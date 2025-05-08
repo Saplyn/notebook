@@ -9,10 +9,6 @@ of as:
 - an attribute to add metadata to some item, like: `#[derive(Debug)]`
 - a way to define new syntax, like: `vec![]`
 
-Macros are powerful, for in-depth understanding and usage, see the
-[Macros chapter](macros.md). Here lists some commonly used
-macros.
-
 ```rust,noplayground
 // function-like macro
 println!("Hello, world!");             // print to stdout
