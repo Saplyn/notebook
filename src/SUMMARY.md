@@ -21,7 +21,11 @@
 - [Zig](./lang/zig/index.md)
   - [Compile Time]()
 - [Go]()
+  - [Essential](./lang/go/essential.md)
 - [Java]()
+  - [Object Oriented](./lang/java/object-oriented.md)
+  - [Exception](./lang/java/exception.md)
+  - [Generic](./lang/java/generic.md)
 
 # Emergency Copy
 
