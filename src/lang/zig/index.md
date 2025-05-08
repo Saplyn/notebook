@@ -8,8 +8,9 @@
 // Hello world program
 const std = @import("std");
 
-pub fn main() void {
-    std.debug.print("Hello world!\n", .{});
+pub fn main() !void {
+    const stdout = std.io.getStdOut().writer();
+    try stdout.print("Hello world!\n", .{});
 }
 ```
 
@@ -37,6 +38,25 @@ if (condition) {
 
 // if-else expression
 const price: u8 = if (discount) 17 else 20;
+
+// switch statement
+switch (value) {
+    1 => std.debug.print("Value is 1!\n", .{}),
+    2 => std.debug.print("Value is 2!\n", .{}),
+    // a switch must be exhaustive, `else` is used as "default" case
+    else => std.debug.print("Value is something else!\n", .{}),
+}
+
+// switch expression
+const output = switch (value) {
+    1 => "Value is 1!",
+    2 => "Value is 2!",
+    else => "Value is something else!",
+};
+
+// unreachable
+if (false) { unreachable; }
+
 ```
 
 ## Looping

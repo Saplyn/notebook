@@ -19,6 +19,7 @@
   - [Unsafe]()
   - [Resources](./lang/rust/resources.md)
 - [Zig](./lang/zig/index.md)
+  - [Fundamental](./lang/zig/fundamental.md)
   - [Compile Time]()
 - [Go]()
   - [Essential](./lang/go/essential.md)
