@@ -1,6 +1,7 @@
 # Zig
 
 - [Language Reference](https://ziglang.org/documentation)
+- [Standard Library](https://ziglang.org/documentation/master/std/)
 
 ```zig
 // Hello world program
