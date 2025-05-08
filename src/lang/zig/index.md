@@ -2,6 +2,7 @@
 
 - [Language Reference](https://ziglang.org/documentation)
 - [Standard Library](https://ziglang.org/documentation/master/std/)
+- [Zig 圣经](https://course.ziglang.cc/)
 
 ```zig
 // Hello world program
