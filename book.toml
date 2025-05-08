@@ -1,5 +1,16 @@
 [book]
 authors = ["Saplyn Miao"]
 language = "en"
+multilingual = false
 src = "src"
 title = "Saplyn's Notebook"
+
+[output.html]
+site-url = "/notebook/"
+additional-css = ["theme/pagetoc.css"]
+additional-js = ["theme/pagetoc.js"]
+
+[output.html.fold]
+enable = true
+
+[preprocessor.pagetoc]
