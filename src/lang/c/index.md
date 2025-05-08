@@ -8,33 +8,33 @@
 #include <stdlib.h>
 
 int generate_secret_number(int min, int max) {
-  return (rand() % (max - min + 1)) + min;
+    return (rand() % (max - min + 1)) + min;
 }
 
 int main() {
-  printf("Guess the number!\n");
+    printf("Guess the number!\n");
 
-  int secret_number = generate_secret_number(1, 100);
+    int secret_number = generate_secret_number(1, 100);
 
-  while (1) {
-    printf("Please input your guess: ");
+    while (1) {
+        printf("Please input your guess: ");
 
-    int guess;
-    scanf("%d", &guess);
+        int guess;
+        scanf("%d", &guess);
 
-    printf("You guessed: %d\n", guess);
+        printf("You guessed: %d\n", guess);
 
-    if (guess < secret_number) {
-      printf("Too small!\n");
-    } else if (guess > secret_number) {
-      printf("Too big!\n");
-    } else {
-      printf("You win!\n");
-      break;
+        if (guess < secret_number) {
+            printf("Too small!\n");
+        } else if (guess > secret_number) {
+            printf("Too big!\n");
+        } else {
+            printf("You win!\n");
+            break;
+        }
     }
-  }
 
-  return 0;
+    return 0;
 }
 ```
 

@@ -9,44 +9,44 @@ In C++, exception is the idiomatic way to handle error.
 // `try` tries to execute the block of code
 // and hands over to `catch` if an exception is thrown
 try {
-  int numerator = 10;
-  int denominator = 0;
-  int result = numerator / denominator;  // Potential division by zero
+    int numerator = 10;
+    int denominator = 0;
+    int result = numerator / denominator;  // Potential division by zero
 
-  // This line won't be executed if an exception is thrown above
-  std::cout << "Result: " << result << std::endl;
+    // This line won't be executed if an exception is thrown above
+    std::cout << "Result: " << result << std::endl;
 } catch (const std::exception& e) {
-  // handle the exception
-  std::cout << "An exception occurred: " << e.what() << std::endl;
+    // handle the exception
+    std::cout << "An exception occurred: " << e.what() << std::endl;
 }
 ```
 
 ```cpp
 // `catch` can be chained to handle specific exceptions
 try {
-  std::string s = "hello";
-  s[10] = 'x';  // Accessing an invalid index throws an out_of_range exception
+    std::string s = "hello";
+    s[10] = 'x';  // Accessing an invalid index throws an out_of_range exception
 } catch (const std::out_of_range& e) {
-  std::cout << "Out of range exception: " << e.what() << std::endl;
+    std::cout << "Out of range exception: " << e.what() << std::endl;
 } catch (const std::exception& e) {
-  std::cout << "An exception occurred: " << e.what() << std::endl;
+    std::cout << "An exception occurred: " << e.what() << std::endl;
 } catch (...) {
-  std::cout << "An unknown exception occurred." << std::endl;
+    std::cout << "An unknown exception occurred." << std::endl;
 }
 ```
 
 ```cpp
 // `throw` can be used to throw an exception manually
 void func() {
-  // when exception is thrown, the control is transferred to the nearest `catch` block
-  throw std::runtime_error("An error occurred in func()");
-  // unreachable code
-  std::cout << "This line won't be executed" << std::endl;
+    // when exception is thrown, the control is transferred to the nearest `catch` block
+    throw std::runtime_error("An error occurred in func()");
+    // unreachable code
+    std::cout << "This line won't be executed" << std::endl;
 }
 try {
-  func();
+    func();
 } catch (const std::exception& e) {
-  std::cout << "An exception occurred: " << e.what() << std::endl;
+    std::cout << "An exception occurred: " << e.what() << std::endl;
 }
 ```
 
@@ -74,17 +74,17 @@ We can define custom exception by inheriting from `std::exception`.
 
 class MyException : public exception {
 private:
-  std::string m_message;
+    std::string m_message;
 public:
-  MyException(const std::string& msg) : m_message(msg) {}
+    MyException(const std::string& msg) : m_message(msg) {}
 
-  std::string what() override { return m_message; }
+    std::string what() override { return m_message; }
 };
 
 try {
-  throw MyException("An error occurred in func()");
+    throw MyException("An error occurred in func()");
 } catch (const std::exception& e) {
-  std::cout << "An exception occurred: " << e.what() << std::endl;
+    std::cout << "An exception occurred: " << e.what() << std::endl;
 }
 ```
 
@@ -94,6 +94,6 @@ try {
 
 class RunOutOfMemory : public std::runtime_error {
 public:
-  RunOutOfMemory(const std::string& msg) : std::runtime_error(msg) {}
+    RunOutOfMemory(const std::string& msg) : std::runtime_error(msg) {}
 };
 ```

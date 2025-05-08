@@ -47,7 +47,7 @@ calls.
 
 ```c
 int add(int a, int b) {
-  return a + b;
+    return a + b;
 }
 
 // return type is `int`, takes two `int` parameters

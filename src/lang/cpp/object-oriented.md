@@ -10,25 +10,25 @@ method.
 class Point {
 // access specifier: only accessible within the class
 private:
-  double x;
-  double y;
+    double x;
+    double y;
 
 // access specifier: accessible outside the class
 public:
-  void set(double x, double y) {
-    // `this` pointer points to the caller object
-    this->x = x;
-    this->y = y;
-  }
+    void set(double x, double y) {
+        // `this` pointer points to the caller object
+        this->x = x;
+        this->y = y;
+    }
 
-  // const method promises not to modify the object
-  double dist(const Point& that) const {
-    return sqrt(
-      // `this` is optional
-      (x - that.x) * (x - that.x) +
-      (y - that.y) * (y - that.y)
-    );
-  }
+    // const method promises not to modify the object
+    double dist(const Point& that) const {
+        return sqrt(
+            // `this` is optional
+            (x - that.x) * (x - that.x) +
+            (y - that.y) * (y - that.y)
+        );
+    }
 };  // don't forget the semicolon
 
 Point p;   // create an object of class Point
@@ -46,48 +46,48 @@ to release allocated resources.
 ```cpp
 class Vector {
 private:
-  double* elem;
-  int sz;
+    double* elem;
+    int sz;
 
 public:
-  // default constructor
-  Vector() {
-    elem = new double[10];
-    sz = s;
-  }
+    // default constructor
+    Vector() {
+        elem = new double[10];
+        sz = s;
+    }
 
-  // constructor with parameter
-  Vector(int s) : // `:` is the initializer list
-    elem{new double[s]},
-    sz{s}
-  {
-    for (int i = 0; i < s; ++i) { elem[i] = 0; }
-  }
+    // constructor with parameter
+    Vector(int s) : // `:` is the initializer list
+        elem{new double[s]},
+        sz{s}
+    {
+        for (int i = 0; i < s; ++i) { elem[i] = 0; }
+    }
 
-  // destructor
-  ~Vector() { delete[] elem; }
+    // destructor
+    ~Vector() { delete[] elem; }
 
-  // copy constructor
-  Vector(const Vector& a) : elem{new double[a.sz]}, sz{a.sz} {
-    for (int i = 0; i < sz; ++i) { elem[i] = a.elem[i]; }
-  }
+    // copy constructor
+    Vector(const Vector& a) : elem{new double[a.sz]}, sz{a.sz} {
+        for (int i = 0; i < sz; ++i) { elem[i] = a.elem[i]; }
+    }
 
-  // move constructor
-  Vector(Vector&& a) : elem{a.elem}, sz{a.sz} {
-    a.elem = nullptr;
-    a.sz = 0;
-  }
+    // move constructor
+    Vector(Vector&& a) : elem{a.elem}, sz{a.sz} {
+        a.elem = nullptr;
+        a.sz = 0;
+    }
 };
 
 class Point {
 private:
-  double x;
-  double y;
+    double x;
+    double y;
 
 public:
-  Point() = default;      // default constructor (compiler generated)
-  Point(const Point&) = delete; // no copy constructor (prevent copy)
-  Point(Point&&) = delete;    // no move constructor (prevent move)
+    Point() = default;      // default constructor (compiler generated)
+    Point(const Point&) = delete; // no copy constructor (prevent copy)
+    Point(Point&&) = delete;    // no move constructor (prevent move)
 };
 ```
 
@@ -102,16 +102,16 @@ class List;
 class Node;
 
 class Node {
-  friend class List; // List can access private members of Node
+    friend class List; // List can access private members of Node
 private:
-  int data;
-  Node* next;
+    int data;
+    Node* next;
 };
 
 class List {
 private:
-  Node* head;
-  Node* tail;
+    Node* head;
+    Node* tail;
 };
 ```
 
@@ -120,11 +120,11 @@ private:
 ```cpp
 class Counter {
 private:
-  static int count; // shared by all instances of Counter
+    static int count; // shared by all instances of Counter
 public:
-  Counter() { ++count; }
-  ~Counter() { --count; }
-  static int getCount() { return count; }
+    Counter() { ++count; }
+    ~Counter() { --count; }
+    static int getCount() { return count; }
 };
 
 int Counter::count = 0; // initialize the static member
@@ -141,24 +141,24 @@ Counter::getCount(); // => 3
 class Animal {
 // access specifier: accessible within the class and derived class
 protected:
-  int age;
+    int age;
 public:
-  void type() { std::cout << "I'm an animal!" << std::endl; }
-  void eat() { std::cout << "yum yum~" << std::endl; }
+    void type() { std::cout << "I'm an animal!" << std::endl; }
+    void eat() { std::cout << "yum yum~" << std::endl; }
 };
 
 // derived class
 class Cat : public Animal {
 public:
-  // override the base class method
-  void type() { std::cout << "I'm a cat!" << std::endl; }
-  // implement a new method
-  void meow() {
-    std::cout << "mew mew~ I'm "
-              << age  // inherited from Animal
-              << " years old!"
-              << std::endl;
-  }
+    // override the base class method
+    void type() { std::cout << "I'm a cat!" << std::endl; }
+    // implement a new method
+    void meow() {
+        std::cout << "mew mew~ I'm "
+                  << age  // inherited from Animal
+                  << " years old!"
+                  << std::endl;
+    }
 };
 
 Cat pet;
@@ -188,25 +188,25 @@ and must be overridden by derived classes.
 ```cpp
 class Animal {
 public:
-  // virtual method (with default implementation)
-  virtual void info() { std::cout << "I'm an animal!" << std::endl; }
-  // pure virtual method (no implementation, must be overridden)
-  virtual void eat() = 0;
+    // virtual method (with default implementation)
+    virtual void info() { std::cout << "I'm an animal!" << std::endl; }
+    // pure virtual method (no implementation, must be overridden)
+    virtual void eat() = 0;
 };
 
 class Feline : public Animal {
 public:
-  // override the base class method
-  void info() override { std::cout << "I'm a feline!" << std::endl; }
-  // override the pure virtual method
-  void eat() override { std::cout << "I eat meat!" << std::endl; }
+    // override the base class method
+    void info() override { std::cout << "I'm a feline!" << std::endl; }
+    // override the pure virtual method
+    void eat() override { std::cout << "I eat meat!" << std::endl; }
 };
 
 class Cat : public Feline {
 public:
-  // make final overrides
-  void info() override final { std::cout << "I'm a cat!" << std::endl; }
-  void eat() override final { std::cout << "I eat fish!" << std::endl; }
+    // make final overrides
+    void info() override final { std::cout << "I'm a cat!" << std::endl; }
+    void eat() override final { std::cout << "I eat fish!" << std::endl; }
 };
 ```
 
@@ -248,24 +248,24 @@ of logical operators `&&` and `||`) cannot be changed.
 ```cpp
 class Point {
 private:
-  double x;
-  double y;
+    double x;
+    double y;
 public:
-  Point() = default;
-  Point(double x = 0, double y = 0) : x(x), y(y) {}
+    Point() = default;
+    Point(double x = 0, double y = 0) : x(x), y(y) {}
 
-  double get_x() const { return x; }
-  double get_y() const { return y; }
+    double get_x() const { return x; }
+    double get_y() const { return y; }
 };
 
 // overload the `+` operator
 Point operator+(const Point& a, const Point& b) {
-  return Point{a.get_x() + b.get_x(), a.get_y() + b.get_y()};
+    return Point{a.get_x() + b.get_x(), a.get_y() + b.get_y()};
 }
 
 // overload the `<<` operator
 std::ostream& operator<<(std::ostream& os, const Point& p) {
-  return os << '(' << p.get_x() << ", " << p.get_y() << ')';
+    return os << '(' << p.get_x() << ", " << p.get_y() << ')';
 }
 ```
 

@@ -8,34 +8,34 @@
 #include <random>
 
 int generate_secret_number(int min, int max) {
-  std::mt19937 rng(time(0));
-  return (rng() % (max - min + 1)) + min;
+    std::mt19937 rng(time(0));
+    return (rng() % (max - min + 1)) + min;
 }
 
 int main() {
-  std::cout << "Guess the number!" << std::endl;
+    std::cout << "Guess the number!" << std::endl;
 
-  int secret_number = generate_secret_number(1, 100);
+    int secret_number = generate_secret_number(1, 100);
 
-  while (true) {
-    std::cout << "Please input your guess: ";
+    while (true) {
+        std::cout << "Please input your guess: ";
 
-    int guess;
-    std::cin >> guess;
+        int guess;
+        std::cin >> guess;
 
-    std::cout << "You guessed: " << guess << std::endl;
+        std::cout << "You guessed: " << guess << std::endl;
 
-    if (guess < secret_number) {
-      std::cout << "Too small!" << std::endl;
-    } else if (guess > secret_number) {
-      std::cout << "Too big!" << std::endl;
-    } else {
-      std::cout << "You win!" << std::endl;
-      break;
+        if (guess < secret_number) {
+            std::cout << "Too small!" << std::endl;
+        } else if (guess > secret_number) {
+            std::cout << "Too big!" << std::endl;
+        } else {
+            std::cout << "You win!" << std::endl;
+        break;
+      }
     }
-  }
 
-  return 0;
+    return 0;
 }
 ```
 
@@ -54,7 +54,7 @@ int main() {
 
 ```cpp
 namespace lyn {
-  int number;  // number is a member of namespace lyn (lyn::number)
+    int number;  // number is a member of namespace lyn (lyn::number)
 }
 
 int main() { lyn::number = 32; }
