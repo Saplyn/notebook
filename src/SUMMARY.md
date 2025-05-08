@@ -28,3 +28,4 @@
 - [`.vimrc`](./copy/dot-vimrc.md)
 - [`.bashrc`](./copy/dot-bashrc.md)
 - [`.tmux.conf`](./copy/dot-tmux-conf.md)
+- [Clang Kit](./copy/clang-kit.md)
