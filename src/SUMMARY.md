@@ -21,7 +21,7 @@
 - [Zig](./lang/zig/index.md)
   - [Fundamental](./lang/zig/fundamental.md)
   - [Compile Time]()
-- [Go]()
+- [Go](./lang/go/index.md)
   - [Essential](./lang/go/essential.md)
 - [Java]()
   - [Object Oriented](./lang/java/object-oriented.md)
