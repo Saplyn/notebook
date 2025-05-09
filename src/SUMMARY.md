@@ -21,6 +21,7 @@
 - [Zig](./lang/zig/index.md)
   - [Fundamental](./lang/zig/fundamental.md)
   - [Compile Time]()
+- [Bash](./lang/bash/index.md)
 - [Go](./lang/go/index.md)
   - [Essential](./lang/go/essential.md)
 - [Java](./lang/java/index.md)
