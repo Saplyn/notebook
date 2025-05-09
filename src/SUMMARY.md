@@ -23,7 +23,7 @@
   - [Compile Time]()
 - [Go](./lang/go/index.md)
   - [Essential](./lang/go/essential.md)
-- [Java]()
+- [Java](./lang/java/index.md)
   - [Object Oriented](./lang/java/object-oriented.md)
   - [Exception](./lang/java/exception.md)
   - [Generic](./lang/java/generic.md)
