@@ -29,13 +29,13 @@ CheckOptions:
   - { key: readability-identifier-naming.ProtectedMemberSuffix,  value: _          }
   - { key: readability-identifier-naming.MacroDefinitionCase,    value: UPPER_CASE }
   - { key: readability-identifier-naming.EnumConstantCase,         value: CamelCase }
-  - { key: readability-identifier-naming.EnumConstantPrefix,       value:           }
+  - { key: readability-identifier-naming.EnumConstantPrefix,       value: _         }
   - { key: readability-identifier-naming.ConstexprVariableCase,    value: CamelCase }
-  - { key: readability-identifier-naming.ConstexprVariablePrefix,  value:           }
+  - { key: readability-identifier-naming.ConstexprVariablePrefix,  value: _         }
   - { key: readability-identifier-naming.GlobalConstantCase,       value: CamelCase }
-  - { key: readability-identifier-naming.GlobalConstantPrefix,     value:           }
+  - { key: readability-identifier-naming.GlobalConstantPrefix,     value: _         }
   - { key: readability-identifier-naming.MemberConstantCase,       value: CamelCase }
-  - { key: readability-identifier-naming.MemberConstantPrefix,     value:           }
+  - { key: readability-identifier-naming.MemberConstantPrefix,     value: _         }
   - { key: readability-identifier-naming.StaticConstantCase,       value: CamelCase }
-  - { key: readability-identifier-naming.StaticConstantPrefix,     value:           }
+  - { key: readability-identifier-naming.StaticConstantPrefix,     value: _         }
 ```
