@@ -7,10 +7,10 @@ title = "Saplyn's Notebook"
 
 [output.html]
 site-url = "/notebook/"
+fold = { enable = true }
 additional-css = ["theme/pagetoc.css"]
 additional-js = ["theme/pagetoc.js"]
-
-[output.html.fold]
-enable = true
+git-repository-url = "https://github.com/Saplyn/notebook"
+edit-url-template = "https://github.com/Saplyn/notebook/edit/main/{path}"
 
 [preprocessor.pagetoc]
