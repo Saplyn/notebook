@@ -28,7 +28,8 @@
   - [Object Oriented](./lang/java/object-oriented.md)
   - [Exception](./lang/java/exception.md)
   - [Generic](./lang/java/generic.md)
-- [Vue]()
+- [Vue](./lang/vue/index.md)
+  - [Resources](./lang/vue/resources.md)
 
 # Emergency Copy
 
