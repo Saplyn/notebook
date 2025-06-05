@@ -25,6 +25,10 @@
   The official reference for Rust.
 - [The Rustonomicon](https://doc.rust-lang.org/nomicon/):
   The dark arts of advanced and unsafe Rust programming.
+- [The Cargo Book](https://doc.rust-lang.org/cargo/):
+  The official book on Cargo, Rust's package manager and build system.
+- [The Rustup Book](https://rust-lang.github.io/rustup/):
+  The official book on Rustup, the Rust toolchain installer.
 - [Rust by Example](https://doc.rust-lang.org/rust-by-example/):
   A collection of runnable examples that illustrate various Rust concepts.
 - [Async Programming in Rust](https://rust-lang.github.io/async-book/):
