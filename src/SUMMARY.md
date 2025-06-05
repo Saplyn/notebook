@@ -33,7 +33,8 @@
 
 # Framework
 
-- [Nuxt.JS](./fwork/nuxt/index.md)
+- [Nuxt.JS (Vue)](./fwork/nuxt/index.md)
+- [Makepad (Rust)](./fwork/makepad/index.md)
 
 # Tools
 
