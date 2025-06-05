@@ -1,6 +1,6 @@
 # Nuxt.js
 
-- [Nuxt.JS Official Website](https://nuxt.com/)
+- [Official Website](https://nuxt.com/)
 
 ```admonish info
 The Nuxt.JS has extensive documentation available at their official website,

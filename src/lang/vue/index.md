@@ -1,6 +1,6 @@
 # Vue
 
-- [Vue.JS Official Website](https://vuejs.org/)
+- [Official Website](https://vuejs.org/)
 
 ```vue
 <!-- Single File Component -->
