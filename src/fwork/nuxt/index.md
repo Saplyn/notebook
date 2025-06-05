@@ -1,4 +1,4 @@
-# Nuxt.js
+# Nuxt.JS
 
 - [Official Website](https://nuxt.com/)
 
