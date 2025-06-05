@@ -14,7 +14,7 @@
   - [Function & Closure](./lang/rust/function.md)
   - [Trait & Generic](./lang/rust/trait.md)
   - [Project]()
-  - [Async]()
+  - [Async](./lang/rust/async.md)
   - [Macro]()
   - [Unsafe]()
   - [Resources](./lang/rust/resources.md)
