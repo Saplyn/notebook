@@ -20,3 +20,12 @@ button {
 }
 </style>
 ```
+
+## Single File Components (SFC)
+
+A Vue component is typically defined in a single file with the `.vue` extension,
+which contains three sections:
+
+- `<template>`: HTML-like syntax for the component's structure.
+- `<script>`: JavaScript (or TypeScript) code for the component's logic.
+- `<style>`: CSS styles for the component, which can be scoped to avoid conflicts.

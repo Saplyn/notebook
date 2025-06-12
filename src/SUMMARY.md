@@ -29,6 +29,8 @@
   - [Exception](./lang/java/exception.md)
   - [Generic](./lang/java/generic.md)
 - [Vue](./lang/vue/index.md)
+  - [Templating]()
+  - [Reactivity]()
   - [Resources](./lang/vue/resources.md)
 
 # Framework
