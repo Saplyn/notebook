@@ -36,6 +36,9 @@
 # Framework
 
 - [Nuxt.JS (Vue)](./fwork/nuxt/index.md)
+- [Relm4 (Rust)](./fwork/relm4/index.md)
+  - [The `#[component]` Macro](./fwork/relm4/component-macro.md)
+  - [Resources](./fwork/relm4/resources.md)
 - [Makepad (Rust)](./fwork/makepad/index.md)
 
 # Tools
