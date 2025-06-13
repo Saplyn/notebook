@@ -1,5 +1,13 @@
 # Resources
 
+## GTK-RS Documentation
+
+- [GTK-RS Series Documentation](https://gtk-rs.org/gtk4-rs/stable/latest/docs/)
+- [Lib-Adwaita-RS Series Documentation](https://world.pages.gitlab.gnome.org/Rust/libadwaita-rs/stable/latest/docs/)
+- [Lib-Panel-RS Series Documentation](https://world.pages.gitlab.gnome.org/Rust/libpanel-rs/stable/latest/docs/)
+- [SourceView-RS Series Documentation](https://world.pages.gitlab.gnome.org/Rust/sourceview5-rs/stable/latest/docs/)
+- [GStreamer Series Documentation](https://gstreamer.freedesktop.org/documentation/rust/stable/latest/docs/)
+
 ## GTK Documentation
 
 ```admonish warning
