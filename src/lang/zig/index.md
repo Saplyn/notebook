@@ -86,3 +86,80 @@ for (array, 0..) |item, index| {
     std.debug.print("{}: {} ", .{index, item});
 }
 ```
+
+## Compound Types
+
+### Enum
+
+```zig
+// `Ops` is a `type`
+const Ops = enum { inc, pow, dec };
+const operations = [_]Ops{ // an array of Ops
+    Ops.inc,
+    Ops.pow,
+    Ops.dec,
+};
+switch (op) {
+    Ops.inc => { current_value += 1; },
+    Ops.dec => { current_value -= 1; },
+    Ops.pow => { current_value *= current_value; },
+    // exhaustive switch, no need for `else`
+}
+
+const Color = enum(u32) { // using u32 as underlying type
+    red = 0xff0000,
+    green = 0x00ff00,
+    blue = 0x0000ff,
+};
+std.debug.print( // multi-line string
+    \\<p>
+    \\  <span style="color: #{x:0>6}">Red</span>
+    \\  <span style="color: #{x:0>6}">Green</span>
+    \\  <span style="color: #{x:0>6}">Blue</span>
+    \\</p>
+    \\
+, .{
+    @intFromEnum(Color.red),
+    @intFromEnum(Color.green),
+    @intFromEnum(Color.blue), // Oops! We're missing something!
+});
+```
+
+### Struct
+
+```zig
+// `Point` is a `type`
+const Point = struct {
+    x: f64,
+    y: f64,
+};
+var point = Point{ .x = 1.0, .y = 2.0 }; // create a Point instance
+point.x = 3.0; // access and modify fields
+
+// default value
+const Character = struct {
+    level: u8,
+    health: u16 = 100, // default health is 100
+};
+```
+
+## Pointer
+
+```zig
+// declare `u8` ptr: *u8
+// reference `num1`: &num1
+var num1: u8 = 5;
+const num1_pointer: *u8 = &num1;
+
+var num2: u8 = undefined;
+num2 = num1_pointer.*; // dereference `num1_pointer`: num1_pointer.*
+num1_pointer.* = 10;   // modify the value pointed by `num1_pointer`
+
+// pointer types
+var mutable: u8 = 5; // `&mutable` is of type `*u8`
+const value: u8 = 5; // `&value` is of type `*const u8`
+
+// const pointer
+const p1: *u8 = &locked; // cannot reassign, point to a specific value
+var   p2: *u8 = &free;   // can be reassigned, point to other
+```
