@@ -37,3 +37,10 @@
   A book on Rust macros.
 - [Learn Rust With Entirely Too Many Linked Lists](https://rust-unofficial.github.io/too-many-lists/):
   A book on implementing linked lists in Rust.
+
+## Presses
+
+- [Rust for Rustaceans](https://rust-for-rustaceans.com/):
+  A book for experienced Rust programmers.
+- [Rust Atomics and Locks](https://marabos.nl/atomics/):
+  Low-level concurrency in practice
