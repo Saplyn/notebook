@@ -52,8 +52,8 @@ let mut x = 10;
 let mut_x = |a: i32| { x += a; };
 
 // capturing closure (move)
-let x = 10;
-let drop_x = || { drop (x); };
+let x = vec![1, 2, 3];
+let drop_x = move || { take(x); };
 ```
 
 At compiler implementation level, closures are divided into two types:
