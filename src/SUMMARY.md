@@ -14,6 +14,7 @@
   - [Function & Closure](./lang/rust/function.md)
   - [Trait & Generic](./lang/rust/trait.md)
   - [Project]()
+  - [Sync & Locks](./lang/rust/sync.md)
   - [Async](./lang/rust/async.md)
   - [Macro]()
   - [Unsafe]()
