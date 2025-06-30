@@ -46,8 +46,8 @@
 
 - [GitHub Actions]()
   - [Resources](./tool/gh-actions/resources.md)
-- [`ast-grep`]()
-- [`watchexec`]()
+- [`ast-grep`](./tool/sg.md)
+- [`watchexec`](./tool/watchexec.md)
 
 # Emergency Copy
 
