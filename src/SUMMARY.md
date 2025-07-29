@@ -33,6 +33,9 @@
   - [Templating]()
   - [Reactivity]()
   - [Resources](./lang/vue/resources.md)
+- [SQLite](./lang/sqlite/index.md)
+  - [Querying](./lang/sqlite/querying.md)
+  - [Integrity](./lang/sqlite/integrity.md)
 
 # Framework
 
