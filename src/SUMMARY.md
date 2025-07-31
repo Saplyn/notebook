@@ -52,6 +52,7 @@
   - [Resources](./tool/gh-actions/resources.md)
 - [`ast-grep`](./tool/sg.md)
 - [`watchexec`](./tool/watchexec.md)
+- [`sed`](./tool/sed.md)
 
 # Emergency Copy
 
