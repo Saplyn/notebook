@@ -1,5 +1,9 @@
 # Zig
 
+```admonish warning
+**This note may be outdated, as Zig is still evolving rapidly.**
+```
+
 - [Language Reference](https://ziglang.org/documentation)
 - [Standard Library](https://ziglang.org/documentation/master/std/)
 - [Zig 圣经](https://course.ziglang.cc/)
