@@ -103,41 +103,6 @@ do { /* ... */ } while (condition)
 
 ```
 
-## Functions
-
-```kotlin
-// function with parameters and return type
-fun sum(x: Int, y: Int): Int {
-    return x + y
-}
-sum(3, 5)
-sum(y = 5, x = 3) // named arguments
-
-// default parameters
-fun greet(name: String = "World") {
-    println("Hello, $name!")
-}
-greet() // Hello, World!
-greet("Saplyn") // Hello, Saplyn!
-
-// single-expression function
-fun multiply(x: Int, y: Int) = x * y
-
-// lambda function
-val square: (Int) -> Int = { x: Int -> x * x }
-println(square(4)) // 16
-
-// lambda invoke in place
-println({ text: String -> text.uppercase() }("hello"))
-
-// no parameters & "no" return type
-val unitFunction: () -> Unit = { println("Hello, Kotlin!") }
-
-// trailing lambda
-listOf(1, 2, 3).fold(0, { x, item -> x + item }) // 6
-listOf(1, 2, 3).fold(0) { x, item -> x + item }  // 6 (trailing lambda)
-```
-
 ## Collections
 
 ### Lists
@@ -200,29 +165,4 @@ println("The value of pineapple juice is: ${readOnlyJuiceMenu["pineapple"]}") //
 // Adding & removing items from a mutable map
 juiceMenu["coconut"] = 150 // Add key "coconut" with value 150 to the map
 juiceMenu.remove("orange") // Remove key "orange" from the map
-```
-
-## Classes
-
-```kotlin
-// Class definition
-class Contact(val id: Int, var email: String = "example@gmail.com") // header (primary constructor)
-{
-    val category: String = "work" // property with default value
-
-    fun printId() { // method
-        println(id)
-    }
-}
-fun main() {
-    val contact = Contact(1, "mary@gmail.com") // instantiating
-}
-
-// data class
-data class User(val id: Int, val name: String)
-/* predefined methods:
-   - `equals()` or `==`
-   - `toString()`
-   - `copy()`
-*/
 ```

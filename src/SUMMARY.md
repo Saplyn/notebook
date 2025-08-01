@@ -30,6 +30,8 @@
   - [Exception](./lang/java/exception.md)
   - [Generic](./lang/java/generic.md)
 - [Kotlin](./lang/kotlin/index.md)
+  - [Function & Lambda](./lang/kotlin/function.md)
+  - [Object Oriented](./lang/kotlin/object-oriented.md)
 - [Vue](./lang/vue/index.md)
   - [Templating](./lang/vue/templating.md)
   - [Reactivity](./lang/vue/reactivity.md)
