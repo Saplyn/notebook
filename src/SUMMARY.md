@@ -55,6 +55,7 @@
 - [`ast-grep`](./tool/sg.md)
 - [`watchexec`](./tool/watchexec.md)
 - [`sed`](./tool/sed.md)
+- [`gdb` With `gef`](./tool/gdb.md)
 
 # Emergency Copy
 
