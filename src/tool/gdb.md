@@ -2,12 +2,13 @@
 
 The GNU Debugger with Enhanced Features.
 
-## Control Commands
+## `gdb` Control Commands
 
 - `file [FILE]`: use `[File]` as the executable to debug, reading its symbols.
 - `target remote [HOST]:[PORT]`: connect to a remote target for debugging.
+- `add-symbol-file [FILE] [ADDRESS]`: add a symbol file at the specified address.
 
-## Debug Commands
+## Debug Control Commands
 
 - `break [LOCATION]`/`b [LOCATION]`: set a breakpoint at the specified location,
   which can be a function name, line number, or address.
@@ -21,8 +22,16 @@ The GNU Debugger with Enhanced Features.
 - `next`/`n`: steps through the program one line of source code at a time.
 - `continue`/`c`: continue execution until the next breakpoint.
 
+## Debug Inspection Commands
+
+- `print [EXPRESSION]`/`p [EXPRESSION]`: evaluate and print the value of the
+  specified expression.
+- `set [VARIABLE]=[VALUE]`: set the value of a variable to a new value.
+- `backtrace`/`bt`: print the stack trace of the current thread.
+- `info local`: list all local variables in the current stack frame
+
 ## Information Commands
 
-- `backtrace`/`bt`: print the stack trace of the current thread.
 - `info function`: list names and data types of all defined functions
+- `info sources`: list all source files used in the debugging session
 - `info break`: list all breakpoints
