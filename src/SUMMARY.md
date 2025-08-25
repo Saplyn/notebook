@@ -43,6 +43,10 @@
 # Framework
 
 - [Nuxt.JS (Vue)](./fwork/nuxt/index.md)
+- [Nest.JS (JavaScript)](./fwork/nest/index.md)
+  - [Controller](./fwork/nest/controller.md)
+  - [Provider](./fwork/nest/provider.md)
+  - [Module](./fwork/nest/module.md)
 - [Relm4 (Rust)](./fwork/relm4/index.md)
   - [The `#[component]` Macro](./fwork/relm4/component-macro.md)
   - [Resources](./fwork/relm4/resources.md)
