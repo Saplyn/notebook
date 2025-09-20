@@ -37,6 +37,8 @@
   A book on Rust macros.
 - [Learn Rust With Entirely Too Many Linked Lists](https://rust-unofficial.github.io/too-many-lists/):
   A book on implementing linked lists in Rust.
+- [The Rust Performance Book](https://nnethercote.github.io/perf-book/):
+  A book on performance optimization in Rust.
 
 ## Presses
 
