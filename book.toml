@@ -1,21 +1,11 @@
 [book]
 authors = ["Saplyn Miao"]
 language = "en"
-multilingual = false
 src = "src"
 title = "Saplyn's Notebook"
 
 [output.html]
 site-url = "/notebook/"
 fold = { enable = true }
-additional-css = ["theme/pagetoc.css", "./theme/mdbook-admonish.css"]
-additional-js = ["theme/pagetoc.js"]
 git-repository-url = "https://github.com/Saplyn/notebook"
 edit-url-template = "https://github.com/Saplyn/notebook/edit/main/{path}"
-
-[preprocessor.pagetoc]
-command = "mdbook-pagetoc"
-
-[preprocessor.admonish]
-command = "mdbook-admonish"
-assets_version = "3.1.0"    # do not edit: managed by `mdbook-admonish install`

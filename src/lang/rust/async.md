@@ -1,8 +1,7 @@
 # Async
 
-```admonish warning
-**This page is imcomplete.**
-```
+> [!warning]
+> **This page is imcomplete.**
 
 ## `async`, `.await` & `impl Future`
 

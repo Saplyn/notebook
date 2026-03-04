@@ -2,10 +2,9 @@
 
 ## Constraints
 
-```admonish warning
-Because [SQLite doesn't support `ALTER TABLE ADD CONSTRAINT`](https://stackoverflow.com/a/1884841/21117414),
-the only way to specify a constraint is do it when creating the table.
-```
+> [!warning]
+> Because [SQLite doesn't support `ALTER TABLE ADD CONSTRAINT`](https://stackoverflow.com/a/1884841/21117414),
+> the only way to specify a constraint is do it when creating the table.
 
 ```sql
 -- `NOT NULL`

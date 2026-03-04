@@ -1,11 +1,10 @@
 # The `#[component]` Macro
 
-```admonish note
-This page is written purely based on observation of the behavior of the
-`#[component]` macro, and the documentation of it from
-[the Relm4 book](https://relm4.org/book/stable/component_macro/reference.html)
-thus may not be complete or accurate.
-```
+> [!note]
+> This page is written purely based on observation of the behavior of the
+> `#[component]` macro, and the documentation of it from
+> [the Relm4 book](https://relm4.org/book/stable/component_macro/reference.html)
+> thus may not be complete or accurate.
 
 The `#[component]` macro provides a convenient way to define UI using builder
 pattern.
@@ -127,16 +126,17 @@ view! {
 - `#[name(widget_name)]` would name the widget as `widget_name`, so that it can
   be referenced later in the UI construction.
 
-```admonish info
-**The following items exists, but their usage and purpose are yet to be studied
-and documented.**
+> [!info]
+> **The following items exists, but their usage and purpose are yet to be studied
+> and documented.**
 
 - `#[transition = "SlideRight"]`
 - `#[root]`
 - `#[local_ref]`
 - `#[iterate]`
 - `#[block_signal(handler_name)]`
-```
+
+````
 
 ### Conditional Widgets
 
@@ -165,7 +165,7 @@ view! {
         }
     }
 }
-```
+````
 
 ### Advanced Syntaxes
 
@@ -276,12 +276,10 @@ This macro adds additional fields to the generated widget struct.
 
 ## `menu!{}`
 
-```admonish info
-**This thing exists, but its usage and purpose are yet to be studied and documented.**
-```
+> [!info]
+> **This thing exists, but its usage and purpose are yet to be studied and documented.**
 
 ## `pre_view()` and `post_view()`
 
-```admonish info
-**This thing exists, but its usage and purpose are yet to be studied and documented.**
-```
+> [!info]
+> **This thing exists, but its usage and purpose are yet to be studied and documented.**
